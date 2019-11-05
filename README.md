@@ -5,21 +5,21 @@ This package allows users to query the EWAS Catalog from R.
 ewascatalog - function to query the EWAS Catalog.
 
 ## Installation
-install.packages("devtools")
-library(devtools)
-install_github("jrs95/ewascatalog")
-library(ewascatalog)
+1. install.packages("devtools")
+2. library(devtools)
+3. install_github("ewascatalog/ewascatalog-r")
+4. library(ewascatalog)
 
 ## Examples
-\\# CpG
+\# CpG
 res <- ewascatalog(cpgquery="cg00029284")
 
-\\# Region
+\# Region
 res <- ewascatalog(regionquery="6:15000000-25000000")
 
-\\# Gene
+\# Gene
 res <- ewascatalog(genequery="FTO")
 
-\\# Trait
+\# Trait
 res <- ewascatalog(traitquery="body mass index")
 
